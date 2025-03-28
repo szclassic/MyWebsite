@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        .tab-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .tab-button.active {
+            border-bottom: 2px solid #007bff;
+            color: #007bff;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .view-all-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .view-all-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .view-all-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <a href="home.html" class="tab-button">About Me</a>
+            <button class="tab-button active">Projects</button>
+            <a href="resume.html" class="tab-button">Resume</a>
+        </div>
+
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Check out some of my notable projects:</p>
+            
+            <div class="project-preview">
+                <div class="project-card">
+                    <h3>Olympic College Search Quest</h3>
+                    <p>Brief preview of the project</p>
+                    <a href="olympicproj.html">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Simple Chatbot</h3>
+                    <p>An intelligent chatbot built with Python and NLP that can engage in conversations and provide assistance.</p>
+                    <a href="chatbotproj.html">Learn More →</a>
+                </div>
+                
+            </div>
+
+            <div class="project-card">
+                <a href="allprojects.html">View All Projects →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

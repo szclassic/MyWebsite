@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        .tab-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .tab-button {
+            padding: 10px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .tab-button.active {
+            border-bottom: 2px solid #007bff;
+            color: #007bff;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="tabs">
+            <a href="home.html" class="tab-button">About Me</a>
+            <a href="projects.html" class="tab-button">Projects</a>
+            <button class="tab-button active">Resume</button>
+        </div>
+
+        <div class="container">
+            <h2>Resume</h2>
+            <p>My resume is listed below:</p>
+        </div>
+    </div>
+</body>
+</html>
