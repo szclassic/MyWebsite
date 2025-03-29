@@ -1,5 +1,5 @@
 // Adding functionality to the tabs
-function openTab(tabId) {
+function openTab(tabId, event) {
     // Hide all tab contents
     const tabContents = document.getElementsByClassName('tab-content');
     for (let content of tabContents) {
@@ -16,7 +16,9 @@ function openTab(tabId) {
     if (document.getElementById(tabId)) {
         document.getElementById(tabId).classList.add('active');
     }
-    event.currentTarget.classList.add('active');
+    if (event && event.currentTarget) {
+        event.currentTarget.classList.add('active');
+    }
 }
 
 // Adding active class to current page's tab button
