@@ -115,3 +115,17 @@ a:visited {
     max-width: 800px;
     margin: 20px auto;
 } 
+
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px; /* Padding for spacing */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-container {
+    max-width: 800px; /* Match the width of the tab container */
+    margin: 0 auto; /* Center the footer */
+}
