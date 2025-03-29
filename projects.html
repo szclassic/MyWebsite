@@ -11,10 +11,25 @@
             max-width: 800px;
             margin: 20px auto;
         }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #6b4c8f;
+        }
         .tabs {
             display: flex;
             gap: 10px;
             border-bottom: 1px solid #ccc;
+            justify-content: flex-end;
+            padding-right: 20px;
         }
         .tab-button {
             padding: 10px 20px;
@@ -54,10 +69,15 @@
 </head>
 <body>
     <div class="tab-container">
-        <div class="tabs">
-            <a href="home.html" class="tab-button">About Me</a>
-            <button class="tab-button active">Projects</button>
-            <a href="resume.html" class="tab-button">Resume</a>
+        <div class="header-container">
+            <a href="mypicture1.png" target="_blank">
+                <img src="mypicture1.png" alt="Profile Picture" class="profile-image">
+            </a>
+            <div class="tabs">
+                <a href="home.html" class="tab-button">About Me</a>
+                <button class="tab-button active">Projects</button>
+                <a href="resume.html" class="tab-button">Resume</a>
+            </div>
         </div>
 
         <div id="tab2" class="tab-content active">
@@ -88,5 +108,13 @@
     </div>
 
     <script src="script.js"></script>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Sam Z. All rights reserved.</p>
+            <p>Connect With Me On  
+                <a href="https://www.linkedin.com/in/sam-zandiasadabadi" target="_blank"> LinkedIn</a>, 
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
