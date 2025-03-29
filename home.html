@@ -11,10 +11,25 @@
             max-width: 800px;
             margin: 20px auto;
         }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .profile-image {
+            width: 150px; /* Increase size as needed */
+            height: 150px; /* Increase size as needed */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover;
+            border: 2px solid #6b4c8f; /* Matches your purple theme */
+        }
         .tabs {
             display: flex;
             gap: 10px;
             border-bottom: 1px solid #ccc;
+            justify-content: flex-end;
+            padding-right: 20px;
         }
         .tab-button {
             padding: 10px 20px;
@@ -38,14 +53,19 @@
 </head>
 <body>
     <div class="tab-container">
-        <div class="tabs">
-            <button class="tab-button active" onclick="openTab('tab1')">About Me</button>
-            <a href="projects.html" class="tab-button">Projects</a>
-            <a href="resume.html" class="tab-button">Resume</a>
+        <div class="header-container">
+            <a href="mypicture1.png" target="_blank">
+                <img src="mypicture1.png" alt="Profile Picture" class="profile-image">
+            </a>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('tab1')">About Me</button>
+                <a href="projects.html" class="tab-button">Projects</a>
+                <a href="resume.html" class="tab-button">Resume</a>
+            </div>
         </div>
 
         <div id="tab1" class="tab-content active">
-            <h2>About Me</h2>
+            <h2>Welcome To My Website!</h2>
             <p>I'm a Software Engineer with a passion for building products that help people live better lives!</p>
         </div>
     </div>
@@ -69,6 +89,14 @@
             event.currentTarget.classList.add('active');
         }
     </script>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Sam Z. All rights reserved.</p>
+            <p>Connect With Me On  
+                <a href="https://www.linkedin.com/in/sam-zandiasadabadi" target="_blank"> LinkedIn</a>, 
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
 
